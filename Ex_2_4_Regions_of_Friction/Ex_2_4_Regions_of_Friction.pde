@@ -23,9 +23,7 @@ void draw() {
     friction.normalize();
     friction.mult(c);
 
-    for (int i=0; i <255/2; i++){
     movers[i].applyForce(friction);
-    }
     movers[i].applyForce(wind);
     movers[i].applyForce(gravity);
 
